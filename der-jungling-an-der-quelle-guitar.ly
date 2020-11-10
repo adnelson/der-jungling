@@ -16,9 +16,9 @@
     \relative cis' {
       \voiceOne
       \set fingeringOrientations = #'(left)
-      cis16-1 e-0 cis-1 fis-1 cis gis'-3 cis,  a'-4 cis, gis' cis, fis
+      <cis-1>16 <e-0> <cis-1> <fis-1> cis <gis'-3> cis,  <a'-4> cis, gis' cis, fis
       |
-      cis16-1 e-0 cis e cis e d-3 e d e d e
+      <cis-1> <e-0> cis e cis e d-3 e d e d e
       |
       cis16 e cis fis cis gis' cis,  a' cis, gis' cis, fis
       |
@@ -32,7 +32,7 @@
       |
       cis e cis e cis e cis e cis e cis e
       |
-      d-3 f-1 d f d f bis,-4 dis-3 bis dis bis dis
+      <d-2> <fis-1> d fis d fis <bis,-4\3> <dis-3> bis dis bis dis
       |
       cis e cis e cis e cis e cis e cis e
       |
@@ -48,9 +48,9 @@
     \relative cis' {
       \voiceFour
       \set fingeringOrientations = #'(left)
-      <a-1>8 gis-4 fis-2 e-1 fis gis-4
+      <a-1>8 <gis-4> <fis-2> <e-1> fis <gis-4>
       |
-      a8 <e-1> <cis-3> <gis'-1> <e-2> <b-2>
+      <a-1> <e-1> <cis-3> <gis'-1> <e-2> <b-2>
       |
       a'8 gis fis e fis gis
       |
@@ -64,14 +64,14 @@
       |
       a' e cis a' e cis
       |
-      a' f d r dis-1 bis-1
+      <a'-1> <fis-3> <d-0> r dis-1 bis-1
       |
       a' e cis a' e cis
       |
       <e-2\rightHandFinger #2 > <b-2\rightHandFinger #1 > <gis-4\rightHandFinger #1 >
       <e'-1> <cis-4> <ais-1>
       |
-      e' d b cis-3 d e
+      e' d b <cis-3> d e
       |
     }
   \new Voice = "lower"
