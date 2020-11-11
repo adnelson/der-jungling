@@ -1,0 +1,16 @@
+{
+  "name": "der-jungling",
+  "version": "1.0.0",
+  "description": "Lilypond sheet music for Der Jungling An Der Quelle by Schubert",
+  "main": "index.js",
+  "author": "Allen Nelson <ithinkican@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "watch": "onchange -i *.ly -- yarn build",
+    "build": "/Applications/LilyPond.app/Contents/Resources/bin/lilypond *.ly"
+  },
+  "devDependencies": {
+    "onchange": "^7.1.0"
+  }
+}
