@@ -9,20 +9,25 @@
 }
 
 \header {
-  title = "Der Jungling An Der Quelle"
-  composer = "Franz Schubert"
-  arranger = "Allen Nelson"
+  title = "Der Jüngling An Der Quelle"
+  subtitle = "D. 300"
+  composer = "Franz Schubert, ca. 1821"
+  arranger = "arr. Allen Nelson, 2020"
 }
 
 songlyrics = \lyricmode {
-  Le -- i -- se rie -- seln der Quelle! ihr
+  Lei -- se rie -- seln der Quelle! ihr
   wal -- len -- den flis -- pern -- den Pap -- peln!
   eu -- er Schlum -- mer ge -- rausch
   we -- cket die Lie -- be nur auf.
   Lin -- de -- rung sucht ich bei euch,
   und sie zu ver -- ges -- sen die
-  Spro -- de ach, und Blat -- ter und Bach
-  seuf -- zen Lou -- i -- se, dir nach, a -- ch, und
+  Sprö -- de ach, und Blät -- ter und Bach
+  seuf -- zen Lou -- i -- se, dir nach, ach, und
+  Blät -- ter und Bach seuf -- zen,
+  Lou -- i -- se, dir nach,
+  Lou -- i -- se!
+  Lou -- i -- se!
 }
 
 <<
@@ -33,11 +38,12 @@ songlyrics = \lyricmode {
 \relative {
   \key a \major
   \accidentalStyle modern
+  \autoBeamOff
   r2. |
   r2. |
   r2. |
   r2. |
-  e'8 a cis e,8. a16 cis8 |
+  e'8[ a] cis e,8. a16 cis8 |
   b4. r4 e8 |
   e,8. gis16 b8 e,8. gis16 b8 |
   \appoggiatura b16 a8 a r r a a |
@@ -51,7 +57,7 @@ songlyrics = \lyricmode {
   \appoggiatura b8 a4 a8 e'4 a,8 |
   f'8. e16 f8 d4. |
   e8. c16 a8 e'8. c16 a8 |
-  b4. cis8 a' g |
+  b4. cis8[ a'] g |
   f8. e16 f8 d4. |
   e4. dis4 dis8 |
   e4.~ 8 d b |
@@ -123,7 +129,7 @@ songlyrics = \lyricmode {
       |
       <d-3> <f-1> d f d f <b,-4> <d-3> b d b d
       |
-      c e c e c e <a, c> dis <a c> dis <a c> dis
+      c e c e c e <a,-2 c-1> <dis-4> <a c> dis <a c> dis
       |
       <a cis> e' <a, cis> e' <a, cis> e' <gis, d'> e' <gis, d'> e' <gis, d'> e'
       |
@@ -162,11 +168,11 @@ songlyrics = \lyricmode {
       |
       a' e cis a' e cis
       |
-      <a'-1> <fis-3> <d-0> r dis-1 bis-1
+      <a'-1> <fis-3> <d-0> r <dis-1> <bis-1>
       |
       a' e cis a' e cis
       |
-      <e-2\rightHandFinger #2 > <b-2\rightHandFinger #1 > <gis-4\rightHandFinger #1 >
+      <e-2\rightHandFinger #2 > <b-2\rightHandFinger #1 > <gis-4>
       <e'-1> <cis-4> <ais-1>
       |
       e' d b <cis-3> d e
@@ -228,6 +234,7 @@ songlyrics = \lyricmode {
       a4 r2 |
       e4. a4 r8 |
       a4.~ 4 r8 |
+      \set fingeringOrientations = #'(right)
       a4. <f-1>4 r8 |
       e2. |
       a2. |
