@@ -18,7 +18,7 @@
 songlyrics = \lyricmode {
   Lei -- se rie -- seln der Quelle! ihr
   wal -- len -- den flis -- pern -- den Pap -- peln!
-  eu -- er Schlum -- mer ge -- rausch
+  eu -- er Schlum -- mer ge -- räusch
   we -- cket die Lie -- be nur auf.
   Lin -- de -- rung sucht ich bei euch,
   und sie zu ver -- ges -- sen die
