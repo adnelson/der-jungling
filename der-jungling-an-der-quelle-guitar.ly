@@ -78,6 +78,7 @@ songlyrics = \lyricmode {
   instrumentName = "Guitar"
   \override StaffSymbol.staff-space = #(magstep +1)
 } <<
+  \tempo "Etwas langsam."
   \key a \major
   \time 6/8
   \clef "treble_8"
