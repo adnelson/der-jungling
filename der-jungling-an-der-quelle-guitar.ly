@@ -13,6 +13,7 @@
   subtitle = "D. 300"
   composer = "Franz Schubert, ca. 1821"
   arranger = "arr. Allen Nelson, 2020"
+  copyright = "©2020 Allen Nelson. Free use with attribution."
 }
 
 songlyrics = \lyricmode {
