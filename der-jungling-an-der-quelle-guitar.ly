@@ -31,8 +31,9 @@ songlyrics = \lyricmode {
 }
 
 <<
+
 \new Staff \with {
-  instrumentName = "Tenor"
+  instrumentName = "Voice."
 }
 \new Voice = "melody"
 \relative {
@@ -75,7 +76,7 @@ songlyrics = \lyricmode {
 }
 
 \new Staff \with {
-  instrumentName = "Guitar"
+  instrumentName = "Guitar."
   \override StaffSymbol.staff-space = #(magstep +1)
 } <<
   \tempo "Etwas langsam."
@@ -83,11 +84,12 @@ songlyrics = \lyricmode {
   \time 6/8
   \clef "treble_8"
   \accidentalStyle modern
+  \override Score.SpacingSpanner.spacing-increment = #1.5
   \new Voice = "upper"
     \relative cis' {
       \voiceOne
       \set fingeringOrientations = #'(left)
-      <cis-1>16 <e-0> <cis-1> <fis-1> cis <gis'-3> cis,  <a'-4> cis, gis' cis, fis
+      <cis-1>16 <e-0> <cis-1> <fis-1> cis <gis'-3> <cis,-1>  <a'-4> cis, gis' cis, fis
       |
       <cis-1> <e-0> cis e cis e <d-3> e d e d e
       |
@@ -132,7 +134,7 @@ songlyrics = \lyricmode {
       |
       c e c e c e <a,-2 c-1> <dis-4> <a c> dis <a c> dis
       |
-      <a cis> e' <a, cis> e' <a, cis> e' <gis, d'> e' <gis, d'> e' <gis, d'> e'
+      <a-1 cis-1> e' <a, cis> e' <a, cis> e' <gis, d'> e' <gis, d'> e' <gis, d'> e'
       |
       cis e cis fis cis gis' cis,  a' cis, gis' cis, fis
       |
@@ -146,7 +148,7 @@ songlyrics = \lyricmode {
       |
       cis e cis e cis e cis e cis e cis e
       |
-      <cis e>2.\fermata
+      <cis-1\rightHandFinger #4 e-0\rightHandFinger #5 >2.\fermata
       |
     }
   \new Voice = "middle"
@@ -155,7 +157,7 @@ songlyrics = \lyricmode {
       \set fingeringOrientations = #'(left)
       <a-1>8 <gis-4> <fis-2> <e-1> fis <gis-4>
       |
-      <a-1> <e-1> <cis-3> <gis'-1> <e-2> <b-2>
+      <a-1> <e-1> \once \override NoteColumn.force-hshift = -0.25 <cis-3> <gis'-1> <e-2> <b-2>
       |
       a'8 <gis-4> fis e fis gis
       |
@@ -169,7 +171,7 @@ songlyrics = \lyricmode {
       |
       a' e cis a' e cis
       |
-      <a'-1> <fis-3> <d-0> r <dis-1> <bis-1>
+      <a'-1> <fis-3> <d-0> \deadNote d\rightHandFinger #1 <dis-1> <bis-1>
       |
       a' e cis a' e cis
       |
@@ -186,13 +188,13 @@ songlyrics = \lyricmode {
       |
       a' e cis a' e cis
       |
-      <a'-2> <f-4> <d-0> r d b
+      <a'-2> <f-4> <d-0>~ [ 8 d b]
       |
       <a'-3> <e-2> <c-4> a' e c
       |
       <gis'-1> <e-2> <b-2> a' e cis
       |
-      a' f d r d b
+      a' f d~ 8[ d b]
       |
       a' e c <dis-1> <c-3> <a-0>
       |
@@ -210,12 +212,13 @@ songlyrics = \lyricmode {
       |
       a' e cis a' e cis
       |
-      a'2.
+      <cis-3 a'-1>2.
     }
   \new Voice = "lower"
     \relative cis {
       \voiceTwo
-      a2. |
+      \set fingeringOrientations = #'(left)
+      <a-0>2. |
       a4 r2 |
       a2. |
       a4 r2 |
@@ -223,7 +226,7 @@ songlyrics = \lyricmode {
       a4 r2 |
       a2. |
       a4 r2 |
-      a2. |
+      a4.~ 4 r8 |
       a4 r2 |
       e4\rightHandFinger #1 r2 |
       r2. |
@@ -240,13 +243,13 @@ songlyrics = \lyricmode {
       e2. |
       a2. |
       a4 r2 |
-      a4 r2 |
+      a2. |
       a4 r2 |
       a4 r2 |
       \set fingeringOrientations = #'(down)
       <a-4>2. |
       \set fingeringOrientations = #'(left)
-      <a-4 cis-3>2. |
+      <a-4\rightHandFinger #1 >2. |
     }
 >>
 
