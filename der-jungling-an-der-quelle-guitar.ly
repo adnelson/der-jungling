@@ -3,6 +3,8 @@
 
 # #(set-global-staff-size 28)
 
+#(define RH rightHandFinger)
+
 \paper {
   system-system-spacing.padding = #4
   top-system-spacing = #20
@@ -90,7 +92,7 @@ songlyrics = \lyricmode {
     \relative cis' {
       \voiceOne
       \set fingeringOrientations = #'(left)
-      <cis-1>16 <e-0> <cis-1> <fis-1> cis <gis'-3> <cis,-1>  <a'-4> cis, gis' cis, fis
+      <cis-1>16\p <e-0> <cis-1> <fis-1\1> cis <gis'-3> <cis,-1>  <a'-4> cis, gis' cis, fis
       |
       <cis-1> <e-0> cis e cis e <d-3> e d e d e
       |
@@ -110,8 +112,8 @@ songlyrics = \lyricmode {
       |
       cis e cis e cis e cis e cis e cis e
       |
-      <gis,\rightHandFinger #3 b\rightHandFinger #4 > e'\rightHandFinger #4
-      <gis,\rightHandFinger #2 b\rightHandFinger #3 > e'\rightHandFinger #4
+      <gis,\RH #3 b\RH #4 > e'\RH #4
+      <gis,\RH #2 b\RH #3 > e'\RH #4
       <gis, b> e'
       <ais,-3 cis-2 > e' <ais, cis> e' <ais, cis> e'
       |
@@ -141,7 +143,7 @@ songlyrics = \lyricmode {
       |
       cis e cis e cis e d e d e d e
       |
-      cis e cis fis cis gis' cis,  a' cis, gis' cis, fis
+      cis\pp e cis fis cis gis' cis,  a' cis, gis' cis, fis
       |
       cis e cis e cis e d e d e d e
       |
@@ -149,14 +151,14 @@ songlyrics = \lyricmode {
       |
       cis e cis e cis e cis e cis e cis e
       |
-      <cis-1\rightHandFinger #4 e-0\rightHandFinger #5 >2.\fermata
+      <cis-1\RH #4 e-0\RH #5 >2.\fermata
       |
     }
   \new Voice = "middle"
     \relative cis' {
       \voiceFour
       \set fingeringOrientations = #'(left)
-      <a-1>8 <gis-4> <fis-2> <e-1> fis <gis-4>
+      <a-1>8 <gis-4\4> <fis-2> <e-1> fis <gis-4>
       |
       <a-1> <e-1> \once \override NoteColumn.force-hshift = -0.25 <cis-3> <gis'-1> <e-2> <b-2>
       |
@@ -172,11 +174,11 @@ songlyrics = \lyricmode {
       |
       a' e cis a' e cis
       |
-      <a'-1> <fis-3> <d-0> \deadNote d\rightHandFinger #1 <dis-1> <bis-1>
+      <a'-1> <fis-3> <d-0> \deadNote d\RH #1 <dis-1> <bis-1>
       |
       a' e cis a' e cis
       |
-      <e-2\rightHandFinger #2 > <b-2\rightHandFinger #1 > <gis-4>
+      <e-2\RH #2 > <b-2\RH #1 > <gis-4>
       <e'-1> <cis-4> <ais-1>
       |
       e' d b <cis-3> d e
@@ -229,7 +231,7 @@ songlyrics = \lyricmode {
       a4 r2 |
       a4.~ 4 r8 |
       a4 r2 |
-      e4\rightHandFinger #1 r2 |
+      e4\RH #1 r2 |
       r2. |
       a4 r2 |
       a4 r2 |
@@ -250,7 +252,7 @@ songlyrics = \lyricmode {
       \set fingeringOrientations = #'(down)
       <a-4>2. |
       \set fingeringOrientations = #'(left)
-      <a-4\rightHandFinger #1 >2. |
+      <a-4\RH #1 >2. |
     }
 >>
 

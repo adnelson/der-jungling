@@ -4,7 +4,7 @@
   "description": "Lilypond sheet music for Der Jungling An Der Quelle by Schubert",
   "main": "index.js",
   "author": "Allen Nelson <ithinkican@gmail.com>",
-  "license": "Creative Commons attribution and share-alike license",
+  "license": "CC-BY-4.0",
   "private": false,
   "scripts": {
     "watch": "onchange -i *.ly -- yarn build",
