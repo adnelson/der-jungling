@@ -6,7 +6,7 @@
 #(define RH rightHandFinger)
 
 \paper {
-  system-system-spacing.padding = #4
+  % system-system-spacing.padding = #4
   top-system-spacing = #20
 }
 
@@ -72,6 +72,7 @@ songlyrics = \lyricmode {
   cis4 r8 r4. |
   r2. |
   r2.\fermata |
+  \bar "|."
 }
 
 \new Lyrics {
